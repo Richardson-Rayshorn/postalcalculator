@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rate Calculator</title>
+</head>
+<body>
+    <h2>Welcome to our Rate Calculator</h2>
+    <form method="POST" action="/getRates">
+        <div class="field">
+            <input type="number" name="number" min="1" max="13"/>
+        </div>
+        <div class="field">
+            <select name="lettertype" id="lettertype">
+                <option value="stamped">Letters(Stamped)</option>
+                <option value="metered">Letters(Metered)</option>
+                <option value="flats">Large Envelopes(Flats)</option>
+            </select>
+        </div>
+        <input type="submit">
+    </form>
+</body>
+</html>
